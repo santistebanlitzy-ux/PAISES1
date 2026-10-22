@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portal de enlaces a periódicos y noticias de cinco países de América Latina.">
+
+    <title>Noticias de América Latina</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #006064;
+        }
+
+        .descripcion {
+            text-align: center;
+            color: #444;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .contenedor {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow-x: auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #80deea;
+            padding: 15px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #4dd0e1;
+            color: #00363a;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e0f7fa;
+        }
+
+        tbody tr:hover {
+            background-color: #b2ebf2;
+        }
+
+        .pais {
+            font-weight: bold;
+            color: #006064;
+            white-space: nowrap;
+        }
+
+        .bandera {
+            width: 60px;
+            height: auto;
+            display: block;
+            margin-bottom: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        a {
+            color: #0077b6;
+            text-decoration: none;
+            display: block;
+            margin: 8px 0;
+        }
+
+        a:hover {
+            color: #004d66;
+            text-decoration: underline;
+        }
+
+        a:focus-visible {
+            outline: 2px solid #006064;
+            outline-offset: 3px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #006064;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 13px;
+            }
+
+            .bandera {
+                width: 40px;
+            }
+
+            .contenedor table {
+                min-width: 520px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌎 Noticias de América Latina</h1>
+
+        <p class="descripcion">
+            Consulta periódicos reconocidos de cinco países latinoamericanos.
+            Accede a sus sitios oficiales para conocer las últimas noticias.
+        </p>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">País</th>
+                        <th scope="col">Noticias destacadas</th>
+                        <th scope="col">Enlaces de periódicos</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- ECUADOR -->
+                    <tr>
+                        <td class="pais">
+                            <img class="bandera"
+                                 src="https://flagcdn.com/w80/ec.png"
+                                 alt="Bandera de Ecuador">
+                            Ecuador
+                        </td>
+                        <td>Política, economía, deportes y actualidad nacional.</td>
+                        <td>
+                            <a href="https://www.eluniverso.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                El Universo
+                            </a>
+                            <a href="https://www.primicias.ec/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Primicias
+                            </a>
+                        </td>
+                    </tr>
+
+                    <!-- MÉXICO -->
+                    <tr>
+                        <td class="pais">
+                            <img class="bandera"
+                                 src="https://flagcdn.com/w80/mx.png"
+                                 alt="Bandera de México">
+                            México
+                        </td>
+                        <td>Noticias nacionales, política, economía y sociedad.</td>
+                        <td>
+                            <a href="https://www.eluniversal.com.mx/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                El Universal
+                            </a>
+                            <a href="https://www.jornada.com.mx/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                La Jornada
+                            </a>
+                        </td>
+                    </tr>
+
+                    <!-- COLOMBIA -->
+                    <tr>
+                        <td class="pais">
+                            <img class="bandera"
+                                 src="https://flagcdn.com/w80/co.png"
+                                 alt="Bandera de Colombia">
+                            Colombia
+                        </td>
+                        <td>Información sobre política, economía y acontecimientos nacionales.</td>
+                        <td>
+                            <a href="https://www.eltiempo.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                El Tiempo
+                            </a>
+                            <a href="https://www.elespectador.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                El Espectador
+                            </a>
+                        </td>
+                    </tr>
+
+                    <!-- ARGENTINA -->
+                    <tr>
+                        <td class="pais">
+                            <img class="bandera"
+                                 src="https://flagcdn.com/w80/ar.png"
+                                 alt="Bandera de Argentina">
+                            Argentina
+                        </td>
+                        <td>Política, economía, deportes y cultura.</td>
+                        <td>
+                            <a href="https://www.lanacion.com.ar/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                La Nación
+                            </a>
+                            <a href="https://www.clarin.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Clarín
+                            </a>
+                        </td>
+                    </tr>
+
+                    <!-- PERÚ -->
+                    <tr>
+                        <td class="pais">
+                            <img class="bandera"
+                                 src="https://flagcdn.com/w80/pe.png"
+                                 alt="Bandera de Perú">
+                            Perú
+                        </td>
+                        <td>Actualidad, política, economía y noticias nacionales.</td>
+                        <td>
+                            <a href="https://elcomercio.pe/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                El Comercio
+                            </a>
+                            <a href="https://rpp.pe/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                RPP Noticias
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Noticias de América Latina | 2026</p>
+    </footer>
+
+</body>
+</html>
+
